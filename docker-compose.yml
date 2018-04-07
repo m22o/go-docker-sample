@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web-sample:
+    build: .
+    volumes:
+      - .:/project-anima
+    ports:
+      - "8081:8080"
+    container_name: web-sample
